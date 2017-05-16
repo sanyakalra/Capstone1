@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dispatch</title>
+<style>
+#header{
+         font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+         text-align:center;
+      	 background-color:#000080;
+    	 color:white;
+    	 padding:20px;
+	 margin-top:0px;
+}
+h3{
+    color:black;
+}
+ul {
+    line-height:40px;
+    font-size:20px;
+    left:0px;
+    float: left;
+    list-style-type: none;
+    height:435px;	      
+}
+li { 
+    margin:5px;
+    padding: 8px;
+    width:170px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#footer {
+    background-color:#000080;
+    color:white;
+    clear:both;
+    position:relative;
+    text-align:center;
+    padding:10px;	 	 
+}
+a#log
+{
+  color:white;
+  position:absolute;
+  right: 100px;
+  top: 100px;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>User Module</h1>
+<a id="log" href="LogOut">LOG OUT </a> 
+</div>
+
+ <ul>
+  <li><a href="U_Checkstatus" style="text-decoration:none;">Check Status</a></li>
+  <li><a href="History" style="text-decoration:none;">History</a></li>
+  <li style="color:#708090">Dispatch</li>  
+</ul>
+
+<form action="Dispatch" method="POST" style="margin:30px">
+<pre>
+Enter File ID : <input type="text" name="FileID" pattern="^[A-Za-z]{2,4}[0-9]{4,10}$"
+ title="File ID should start with 2 to 4 characters then 4-10 digits 
+Example: cs12345" required>
+<br>
+<i>Remarks       </i>: <input type="text" name="Remark">
+<br>
+<input type="submit" name="Submit">
+</pre>
+</form>
+
+
+
+
+<div id="footer">
+Copyright @ pec.ac.in
+</div>
+
+</body>
+
+</html>

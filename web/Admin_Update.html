@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>    
+<title>Admin_Update</title>
+<style>
+#header{
+         font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+         text-align:center;
+      	 background-color:#000080;
+    	 color:white;
+    	 padding:20px;
+	 margin-top:0px;
+       }
+ul#main {
+    line-height:40px;
+    font-size:20px;
+    left:0px;
+    float: left;
+    list-style-type: none;
+    height:435px;	      
+}
+ul#main li { 
+    margin:5px;
+    padding: 8px;
+    width:170px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+ul#menu {
+    padding: 18px;
+}
+
+ul#menu li {
+    display: inline;
+}
+a#log
+{
+  color:white;
+  position:absolute;
+  right: 100px;
+  top: 100px;
+}
+ul#menu li a {
+    background-color: #0066FF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+#footer {
+    background-color:#000080;
+    color:white;
+    clear:both;
+    position:relative;
+    text-align:center;
+    padding:10px;	 	 
+}
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>Administrator Module</h1>
+<a id="log" href="LogOut">LOG OUT </a> 
+</div>
+    
+    <ul id="main">
+        <li><a href="A_Checkstatus" style="text-decoration:none;">Check Status</a></li>
+        <li><a href="A_History" style="text-decoration:none;">History</a></li>
+        <li style="color:#708090">Update Database</li>  
+    </ul>
+    <ul id="menu">
+        <li><a href="Admin_UChange.html" style="text-decoration:none;">Update information</a></li>
+        <li><a href="Admin_UInsert.html" style="text-decoration:none;">Insert a new member</a></li>
+        <li><a href="Admin_UDelete.html" style="text-decoration:none;">Delete a member</a></li>
+    </ul> 
+   
+<div id="footer">
+Copyright @ pec.ac.in
+</div>
+</body>
+</html>

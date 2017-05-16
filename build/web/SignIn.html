@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>    
+<title>SignIn</title>
+<style>
+#header{
+         font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+         text-align:center;
+      	 background-color:#000080;
+    	 color:white;
+    	 padding:20px;
+	 margin-top:0px;
+       }
+ul {
+    line-height:40px;
+    font-size:20px;
+    left:0px;
+    float: left;
+    list-style-type: none;
+    height:435px;	      
+}
+li { 
+    margin:5px;
+    padding: 8px;
+    width:170px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+li a:hover{
+    background-color: #B8B8B8;
+}
+#footer {
+    background-color:#000080;
+    color:white;
+    clear:both;
+    margin-top: 205px;
+    text-align:center;
+    padding:10px;	 	 
+}
+a#log
+{
+  color:white;
+  position:absolute;
+  right: 100px;
+  top: 100px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="header">
+<h1>Sign In</h1>
+</div>
+    <a id="log" href="Home.html">HOME</a>
+<center>
+
+<form action="SignIn" method="post" style="margin-top:30px" >
+  Username<br>
+  <input type="text" name="username" required>
+  <br><br>
+  Password<br>
+  <input type="password" name="password" required>
+  <br><br>
+  <input type="radio" name="ue" id="ue" value="Executive/Teacher" >Executive/Teacher<br>
+  <input type="radio" name="ue" id="ue" value="Administrator">Administrator<br><br>
+
+  <br>
+  <input type="submit" value="Log In">&nbsp; &nbsp;<a href="SignUp.html">New User? Click here</a> 
+</form>
+
+</center>
+<div id="footer">
+Copyright @ pec.ac.in
+</div>
+</body>
+</html>
